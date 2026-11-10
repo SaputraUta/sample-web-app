@@ -1,0 +1,26 @@
+{
+  "widgets": [
+    {
+      "type": "metric", "x": 0, "y": 0, "width": 6, "height": 6,
+      "properties": {
+        "title": "CPU Metrics",
+        "view": "singleValue",
+        "region": "us-east-1",
+        "metrics": [["AWS/EC2", "CPUUtilization", "InstanceId", "i-0549795cbe9d874dc"]]
+      }
+    },
+    {
+      "type": "metric", "x": 6, "y": 0, "width": 12, "height": 6,
+      "properties": {
+        "title": "Build Metrics",
+        "view": "singleValue",
+        "region": "us-east-1",
+        "metrics": [
+          ["AWS/CodeBuild", "Builds", "ProjectName", "sample-web-app-build"],
+          ["AWS/CodeBuild", "SucceededBuilds", "ProjectName", "sample-web-app-build"],
+          ["AWS/CodeBuild", "FailedBuilds", "ProjectName", "sample-web-app-build"]
+        ]
+      }
+    }
+  ]
+}
